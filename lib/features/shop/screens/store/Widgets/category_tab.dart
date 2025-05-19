@@ -4,6 +4,7 @@ import 'package:mystore/common/widgets/products/product_cards/product_vertical_c
 import 'package:mystore/common/widgets/texts/section_heading.dart';
 import 'package:mystore/features/shop/models/ProductModel.dart';
 import 'package:mystore/features/shop/models/category_model.dart';
+import 'package:mystore/features/shop/screens/store/Widgets/category_brand.dart';
 
 import '../../../../../common/widgets/brands/brand_show_case.dart';
 import '../../../../../utils/constants/image_strings.dart';
@@ -23,7 +24,7 @@ class Tcategorytab extends StatelessWidget {
         padding:EdgeInsets.all(TSizes.defaultSpace),
         child: Column(
           children: [
-            TBrandShowcase(images: [TImages.productImage1,TImages.productImage2,TImages.productImage3],),
+            CategoryBrand(category: category),
             const SizedBox(height: TSizes.spaceBtwItems,),
 
             TsectionHeadingBut(title: "You might like",showActionButton: true,onpressed: (){},),
